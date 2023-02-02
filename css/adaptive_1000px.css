@@ -1,0 +1,127 @@
+@media (max-width: 1000px) {
+
+    
+/* --buttons, icons, inputs, checkboxes-- */
+    .button {
+        width: 100%;
+    }
+    
+    .button_black:hover {
+        width: 100%; 
+    }
+
+
+
+
+
+
+/*   --header--   */
+    .header {
+        height: 57px;
+    }
+
+    .nav, #button_header {
+        display: none;
+    }
+
+    .header_container {
+        display: flex;
+        justify-content: space-between;
+        padding: 23px 9px 19px 18px;
+    }
+
+    .header-right {
+        min-width: max-content;
+        flex-grow: 0; 
+    }
+
+    
+
+
+/*   --section-projects--   */
+    .projects_section {
+        padding-bottom: 0px;    
+    }
+
+    .projects_photo-gallery ul, .projects_slider {
+        display: none;
+    }
+
+    .projects_container {
+        padding: 34px 18px 0px 18px;
+    }
+
+    .projects_title {
+        position: static;
+    }
+    
+
+
+
+    .projects_total {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .projects_info {
+        max-width: 442px;
+        min-height: 190px;
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+
+    .projects_photo-gallery {
+        order: -1;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .projects_slider-mobile {
+        position: absolute;
+        right: 130px;
+        top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .slide-arrow-right {
+        transform: scale(-1, 1)
+    }  /* не получается привязать местоположение стрелочек к фотографии. засовываю их так, чтобы div с фотогалереей стал для них родительским тэгом + даю позишн абсолют - но когда включаешь резиновую вёрстку - стрелочки сьезжают и не прилипают к фотке */
+
+/* вариант-2 (через :before тоже пока не понимаю как сделать 
+    .projects_photo::before {
+        content: url('../img/slide-arrow.png') url('../img/slide-arrow.png');
+        opacity: 1;
+    }
+*/ 
+
+
+    
+    .projects_h2 {
+    font-size: 22px;
+    line-height: 138.6%;
+    align-self: center;
+    }
+
+    .projects_p {
+        font-size: 11px;
+        line-height: 17px;
+        align-self: center;  /* НЕ ПОЛУЧАЕТСЯ ВЫРОВНЯТЬ ПО ЦЕНТРУ */
+    }
+    
+    .projects_h4 {
+        font-size: 14px;
+        line-height: 138.6%;
+    }
+    
+    .projects_block span {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+
+}
+
+
